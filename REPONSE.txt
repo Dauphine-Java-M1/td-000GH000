@@ -1,0 +1,50 @@
+/* Laurent XU */
+
+mvn -v
+Apache Maven 3.6.0
+
+/*6*/
+Le répertoire 'target' contient les répertoires suivants : 'classes', 'generated-sources', 'maven-status'.
+Le répertoire 'src' contient les répertoires 'main' et 'test'.
+
+/*7*/
+Le fichier responsable de cet affichage est 'javaavance/td00/src/main/java/fr/dauphine/ja/xulaurent/td00/App.java'
+
+/*8*/
+Classpath est une variable qui permet d'indiquer à la JVM la localisation des fichiers '.class'.
+
+/*13*/
+Cette propriété permet de spécifier la version Java utilisée pour exécuter les class. On lui donne la valeur 1.7.
+
+/* EXERCICE 2 */
+> java -jar target//td00-1.0-SNAPSHOT.jar 
+aucun attribut manifest principal dans target//td00-1.0-SNAPSHOT.jar
+
+/* EXERCICE 3 */
+/*3*/
+Eclipse propose la création d'une fonction sysout();
+
+/*4*/
+Eclipse propose la création d'une fonction toStr();
+
+/*5*/
+Eclipse propose la création d'une fonction main().
+
+/*6*/
+Eclipse propose la création d'une fonction get() ou une fonction getToto().
+Eclipse propose la création d'une fonction set() ou une fonction setToto().
+
+/*7*/
+Avec le nom de la classe : permet de renommer la classe.
+Avec le champ toto : permet de renommer la variable toto partout où elle est utilisée.
+
+
+
+
+
+
+
+
+
+
+
