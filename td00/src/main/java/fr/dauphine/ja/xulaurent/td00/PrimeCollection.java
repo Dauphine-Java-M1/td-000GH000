@@ -23,10 +23,13 @@ public class PrimeCollection {
 		}
 	}
 	
-	private static boolean isPrime(int p) {
+	public static boolean isPrime(int p) {
 		int num = (int)Math.ceil((Math.sqrt(p)));
 		if (p == 0 || p == 1) {
 			return false; // vous avez dit en amphi que 1 n'est pas un nombre premier
+		}
+		else if (p == 2) {
+			return true;
 		}
 		for (int i = 2; i <= num; i++) {
 			if (p % i == 0) {
