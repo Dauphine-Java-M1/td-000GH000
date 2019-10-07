@@ -38,8 +38,12 @@ Eclipse propose la création d'une fonction set() ou une fonction setToto().
 Avec le nom de la classe : permet de renommer la classe.
 Avec le champ toto : permet de renommer la variable toto partout où elle est utilisée.
 
+/* TP */
+/*5*/
+git met en vert les lignes ajoutées et en rouge les lignes supprimées.
 
 
+/* Commentaire fin de fichier */
 
 
 
