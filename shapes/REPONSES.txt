@@ -1,0 +1,70 @@
+/* EXO 1 */
+
+/*1*/
+Cela fonctionne car la main accède à des champs private qui sont dans la même classe.
+
+/*2*/
+Cette fois cela ne marche pas car la méthode main dans TestPoint ne peut pas accéder aux champs x et y dans la classe Point car ils sont private.
+On peut y remédier en utilisant des méthodes qui vont permettre d'accéder aux champs private ou on peut déclarer les champs publics.
+
+/*3*/
+Il faut que les champs d'une classe soient private afin de meiux contrôler ces champs et éviter que n'importe qui puisse les modifier.
+
+/*4*/
+Un accesseur est une méthode qui retourne un champs, elle permet d'accéder à des champs private. On doit en faire ici.
+
+/*5*/
+On a créé un constructeur donc le constructeur par défaut est supprimé. On ne peut plus appeler new Point() mais on peut appeler new Point(x, y)
+
+/*6*/
+L'affection ne fonctionne plus car Eclipse ne sait pas que les paramètres x et y correspondent aux variables px et py.
+
+/*7*/
+Il faut créer un nouveau champ static qui s'incrémente à chaque appelle au constructeur.
+
+/*8*/
+Le compilateur sait le constructeur à appeler grâce à la signature du constructeur (ils ont des paramètres différents).
+
+
+/* EXO 2 */
+/*1*/
+Le code affiche true puis false car p1 et p2 font référence au même objet alors que p3 fait référence à un autre point mais qui a les mêmes coordonnées.
+
+/*3*/
+On a écrit une méthode isSameAs qui retourne true si deux points ont les mêmes coordonnées. On souhaite donc logiquement que list.indexOf(p3) renvoie la même valeur que list.indexOf(p2) c'est-à-dire 0. 
+La méthode appelée par indexOf est equals().
+
+/* EXO 3 */
+/*2*/
+Si on dépasse la capacité fixée, on a une exception java.lang.ArrayIndexOutOfBoundsException.
+Avant d'ajouter un point il faut vérifier que le tableau a encore de la place. Sinon, le point n'est pas ajouté.
+
+/*5*/
+Si null est passé en argument à la méthode contains, on a une exception java.lang.NullPointerException.
+Faire add(null) ne change rien, il y a toujours une exception NullPointerException.
+
+/*6*/
+pointCapacity() n'est plus utile car une LinkedList n'est pas vraiment limitée (sauf manque de mémoire). nbPoints renvoient la taille de la liste chaînée et utilisent la méthode size() implémentée dans la classe LinkedList. De même la méthode contains utilise la méthode contains implémentée dans la classe LinkedList.
+
+/* EXO 4*/
+/*1*/
+La méthode translate peut translater un point en changeant ses coordonnées dans ce cas la signature de la méthode est void translate(dx, dy).
+La méthode translate peur translater un point en créant un nouveau point dont les coordonnées correpondent aux anciennes translater de dx et dy.
+
+/*5*/
+En translatant le centre de c2, le centre de c1 a aussi été translaté car ils font référence au même point p.
+Pour éviter ce problème, il faut créer un nouveau point lors de l'appel à la méthode translate.
+
+/*6*/
+Le code crée un nouveau cercle c puis translate le centre. Cependant la méthode translate a crée un nouveau point translaté mais ne l'a pas affecté au centre du cercle c.
+
+/* EXO 5 */
+
+/*1*/
+Non, car on peut créer deux attributs Circle dans la classe.
+
+/*4*/
+Le code n'affiche pas ce que l'on veut, il affiche son adresse.
+
+
+
