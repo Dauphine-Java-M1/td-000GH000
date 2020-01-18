@@ -1,7 +1,7 @@
 package fr.dauphine.ja.xulaurent.shapes.model;
 
 
-public class Circle {
+public class Circle extends Shape{
 
 	private Point center;
 	private int r;
@@ -70,5 +70,10 @@ public class Circle {
 	
 	public int getRadius() {
 		return this.r;
+	}
+
+	@Override
+	public int getX() {
+		return this.center.getX();
 	}
 }

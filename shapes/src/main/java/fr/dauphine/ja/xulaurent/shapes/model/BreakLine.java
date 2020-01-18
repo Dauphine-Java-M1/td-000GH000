@@ -2,7 +2,7 @@ package fr.dauphine.ja.xulaurent.shapes.model;
 import java.util.LinkedList;
 import java.util.Objects;
 
-public class BreakLine {
+public class BreakLine extends Shape{
 
 	private LinkedList<Point> listPoint;
 
@@ -47,6 +47,16 @@ public class BreakLine {
 			}
 		}
 		return false;
+	}
+	
+	public LinkedList<Point> getListPoint() {
+		return this.listPoint;
+	}
+
+	@Override
+	public int getX() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 	/*
