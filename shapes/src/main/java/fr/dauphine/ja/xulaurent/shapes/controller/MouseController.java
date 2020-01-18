@@ -26,7 +26,6 @@ public class MouseController extends Frame implements MouseMotionListener{
 	@Override
 	public void mouseMoved(MouseEvent e) {
 		this.shape.translate(e.getX(), e.getY());
-		System.out.println("mouse : " + e.getX() + "; " + e.getY());
 		this.world.changeWorld();
 	}
 

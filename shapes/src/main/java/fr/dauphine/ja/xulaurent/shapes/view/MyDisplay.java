@@ -68,7 +68,5 @@ public class MyDisplay extends JPanel implements Observer{
 
 	@Override
 	public void update(Observable o, Object arg) {
-		System.out.println("ok");
-		System.out.println(w.getShapes().get(0).getX() + ";");
 	}
 }

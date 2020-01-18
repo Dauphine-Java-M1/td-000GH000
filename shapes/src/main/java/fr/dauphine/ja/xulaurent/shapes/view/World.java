@@ -1,4 +1,4 @@
-package view;
+package fr.dauphine.ja.xulaurent.shapes.view;
 
 import java.util.ArrayList;
 
