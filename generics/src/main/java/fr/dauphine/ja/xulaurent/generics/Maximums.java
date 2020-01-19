@@ -7,6 +7,7 @@ public class Maximums {
 		System.out.println(myMax(2014, 86, 13));
 		System.out.println(myMax(8.6, 16.64));
 		System.out.println(myMax("baa", "aba"));
+		System.out.println(myMax());
 		//System.out.println(myMax(8.6, "aba"));
 		//System.out.println(myMax());
 		//System.out.println(compareTo());
@@ -23,6 +24,9 @@ public class Maximums {
 	}*/
 
 	public static <T extends Comparable<T>> T myMax(T... t) {
+		if (t.length == 0) {
+			throw new IllegalArgumentException("need at least 1 args");
+		}
 		T max = t[0];
 		for (T e : t) {
 			if (max.compareTo(e) == -1)

@@ -15,8 +15,8 @@ public class Exercice3 {
 		return length;
 	}*/
 	
-	public static List listLength(List<? extends CharSequence> list) {
-		ArrayList length = new ArrayList();
+	public static List<Integer> listLength(List<? extends CharSequence> list) {
+		ArrayList<Integer> length = new ArrayList<Integer>();
 		for(int i = 0; i < list.size(); i++) {
 			CharSequence seq = (CharSequence)list.get(i);
 			length.add(seq.length());
