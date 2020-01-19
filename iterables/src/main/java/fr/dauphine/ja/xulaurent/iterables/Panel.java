@@ -6,12 +6,12 @@ import java.util.List;
 
 public class Panel extends AbstractList<Integer> implements Iterable<Integer> {
 
-	private int deb;
-	private int fin;
+	private int beginning;
+	private int end;
 
 	public Panel(int deb, int fin) {
-		this.deb = deb;
-		this.fin = fin;
+		this.beginning = deb;
+		this.end = fin;
 	}
 	public static void main(String[] args) {
 		Iterator<Integer> it = panel1(1, 5);
@@ -71,7 +71,7 @@ public class Panel extends AbstractList<Integer> implements Iterable<Integer> {
 	}
 
 	public Iterator<Integer> iterator() {
-		return panel1(deb, fin);
+		return panel1(beginning, end);
 	}
 
 	public static List<Integer> panel(int deb, int fin) throws IllegalArgumentException{
@@ -83,7 +83,7 @@ public class Panel extends AbstractList<Integer> implements Iterable<Integer> {
 
 	@Override
 	public Integer get(int i) {
-		Iterator<Integer> it = panel2(deb, fin).iterator();
+		Iterator<Integer> it = panel2(beginning, end).iterator();
 		while (i > 0) {
 			it.next();
 			i--;
@@ -94,7 +94,7 @@ public class Panel extends AbstractList<Integer> implements Iterable<Integer> {
 	@Override
 	public int size() {
 		int size = 0;
-		Iterator<Integer> it = Panel.panel2(deb, fin).iterator();
+		Iterator<Integer> it = Panel.panel2(beginning, end).iterator();
 		while (it.hasNext()) {
 			it.next();
 			size++;
